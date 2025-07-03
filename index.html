@@ -2,93 +2,191 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Canturia</title>
-  <!-- Font Awesome para os ícones -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-dP5pTPu3L6Pz8c6xI9xVnMIfLqKmZjD6ct8z5/3jKkJXJevzmtS4ZfF2kF5GRuI3k3svu2w+w9cY77rY6WyB5w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eduardo Cantuaria Clemente</title>
+  <link rel="icon" href="batman.jpg"/>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #edf6f9, #d9f0e6);
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 40px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin: 10px;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      text-decoration: none;
+      background-color: #0b1a3d;
       color: white;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
     }
-
-    .btn i {
-      font-size: 20px;
+    header, footer {
+      text-align: center;
+      padding: 20px 0;
     }
-
-    .linkedin {
-      background-color: #0077b5;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
     }
-
-    .linkedin:hover {
-      background-color: #005f8d;
+    nav a {
+      color: #7966e7;
+      text-decoration: none;
+      font-weight: bold;
     }
-
-    .instagram {
-      background-color: #e1306c;
+    nav a:hover {
+      text-decoration: underline;
     }
-
-    .instagram:hover {
-      background-color: #c61b56;
+    main {
+      max-width: 800px;
+      margin: 0 auto;
     }
-
-    .portfolio {
-      background-color: #3abb83;
+    img.batman {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #000;
     }
-
-    .portfolio:hover {
-      background-color: #2e9c6c;
+    form label, form input, form button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 5px auto;
+    }
+    form input, form button {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+    }
+    form button {
+      background-color: #27408b;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    form button:hover {
+      background-color: #3a5fcd;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+    .instagram-link{
+        text-align: center;
+    }
+    .instagram-link a{
+        text-decoration: underline;
+        color: #d10b4d;
+    }
+    .instagram-link svg {
+      fill: #d10b4d;
+      width: 24px;
+      height: 24px;
+    }
+    .WhatsApp-link{
+        text-align: center;   
+    }
+    .WhatsApp-link a{
+        color: green;
     }
   </style>
 </head>
 <body>
-  <h1>Olá! Eu sou o Eduardo Canturia</h1>
-  <p>Me encontre nas redes sociais ou veja meu portfólio:</p>
+  <header>
+    <h1>Eduardo Cantuaria Clemente</h1>
+    <nav>
+      <ul>
+        <li><a href="#principal">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="principal">
+    <section>
+      <h2>Batman</h2>
+      <img
+        src="https://img.freepik.com/premium-photo/comics-about-batman-batman-dark-knight-bat-superhero-vector-illustration_1002979-341.jpg"
+        alt="Imagem do Batman"
+        class="batman"
+      />
+      <!-- Substituído por relógio -->
+      <p id="relogio"></p>
+    </section>
 
-  <a class="btn linkedin" href="https://www.linkedin.com/in/eduardo-cantuaria-9646a1224" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
+    <section id="sobre">
+      <h2>Sobre o Site</h2>
+      <p>Este site tem como objetivo compartilhar conteúdos interessantes, começando com uma homenagem ao Batman.</p>
+    </section>
+    <a href="./index.html">Clique aqui!</a>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-  <a class="btn instagram" href="https://www.instagram.com/edu_clemente4" target="_blank">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-  <a class="btn portfolio" href="https://sites.google.com/view/curriculo-eduardo-clemente/in%C3%ADcio" target="_blank">
-    <i class="fas fa-file-alt"></i> Portfólio
-  </a>
+        <label for="mensagem">Mensagem:</label>
+        <input type="text" id="mensagem" name="mensagem" />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="instagram-link">
+        <a href="https://www.instagram.com/edu_clemente4?igsh=MTlkd3lqdmo1c25xZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/>
+          </svg>
+          Instagram: @edu_clemente4
+        </a>
+      </div>
+      <div class="WhatsApp-link">
+        <a href="https://wa.me/556199644112" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#25D366" aria-hidden="true" focusable="false">
+                <path d="M20.52 3.48A11.94 11.94 0 0012 0a12 12 0 00-10.7 17.66L0 24l6.37-1.68A11.94 11.94 0 0024 12a11.94 11.94 0 00-3.48-8.52zm-8.52 15a7.52 7.52 0 01-3.83-1.1l-.27-.17-2.27.6.61-2.21-.18-.28a7.51 7.51 0 011.33-9.45 7.54 7.54 0 019.56 1.2 7.54 7.54 0 01-7.15 11.21z"/>
+                <path d="M16.27 14.35c-.25-.13-1.47-.72-1.7-.8s-.4-.13-.57.13-.66.8-.81.97-.3.2-.54.07a7.54 7.54 0 01-2.22-1.37 8.43 8.43 0 01-1.56-1.94c-.16-.27 0-.41.12-.54.13-.13.3-.32.45-.48a.35.35 0 00.05-.54c-.13-.2-.57-1.38-.78-1.9s-.4-.42-.57-.43h-.49a1.2 1.2 0 00-.88.41 3.74 3.74 0 00-1.13 2.68 4.59 4.59 0 001.35 2.29 9.75 9.75 0 004.44 3.32 5.9 5.9 0 002.17.35 4.75 4.75 0 002.64-.98 4.51 4.51 0 001.33-2.36c.12-.5.1-.91-.07-1.26-.18-.3-.5-.49-.75-.61z"/>
+              </svg>              
+          WhatsApp: 61996441112
+        </a>
+      </div> 
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Eduardo Cantuaria Clemente. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JavaScript simples -->
+  <script>
+    // Atualiza o relógio
+    function atualizarRelogio() {
+      const agora = new Date();
+      const opcoes = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      };
+      const data = agora.toLocaleDateString('pt-BR', opcoes);
+      const hora = agora.toLocaleTimeString('pt-BR');
+      document.getElementById("relogio").textContent = `${data} - ${hora}`;
+    }
+    setInterval(atualizarRelogio, 1000);
+    atualizarRelogio();
+
+    // Lógica do formulário
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      console.log("Nome:", nome);
+      console.log("Email:", email);
+      console.log("Mensagem:", mensagem);
+
+      alert("Obrigado pelo contato, " + nome + "! Sua mensagem foi enviada com sucesso.");
+      form.reset();
+    });
+  </script>
 </body>
 </html>
